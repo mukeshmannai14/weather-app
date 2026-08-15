@@ -48,35 +48,35 @@ function Weather() {
     setError("");
     setWeather(null);
 
-    try {
-      const apiKey = process.env.REACT_APP_WEATHER_API_KEY;
+try {
+  const apiKey = process.env.REACT_APP_WEATHER_API_KEY;
 
-      const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${encodeURIComponent(
-        city
-      )}&appid=${"74de8d8430e8375261258780d30e7e4f"}&units=metric`;
+  const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${encodeURIComponent(
+    city
+  )}&appid=${apiKey}&units=metric`;
 
-      const response = await axios.get(apiUrl);
+  const response = await axios.get(apiUrl);
 
-      setWeather(response.data);
-    } catch (error) {
-      setError(
-        "City not found. Please enter a valid city name."
-      );
-      setWeather(null);
-    } finally {
-      setLoading(false);
-    }
-  };
+  setWeather(response.data);
+} catch (error) {
+  setError("City not found. Please enter a valid city name.");
+  setWeather(null);
+} finally {
+  setLoading(false);
+}
 
-  // -----------------------------------
-  // FORM SUBMIT
-  // -----------------------------------
+};  // ✅ closes searchWeather
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
 
-    searchWeather();
-  };
+// -----------------------------------
+// FORM SUBMIT
+// -----------------------------------
+
+const handleSubmit = (event) => {
+  event.preventDefault();
+
+  searchWeather();
+};
 
   return (
     <main className="weather-page">
