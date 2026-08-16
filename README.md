@@ -8,9 +8,9 @@ Users can search for a city and view temperature, weather conditions, humidity, 
 
 ## 🚀 Live Demo
 
-🔗 **Live Website:** YOUR_VERCEL_LINK
+🔗 **Live Website:** https://weather-app-gilt-beta-83.vercel.app/
 
-🔗 **GitHub Repository:** YOUR_GITHUB_REPOSITORY_LINK
+🔗 **GitHub Repository:** https://github.com/mukeshmannai14/weather-app
 
 ---
 
@@ -228,12 +228,6 @@ Then add your OpenWeather API key as the value and redeploy.
 ### Mukesh
 
 **Full Stack Developer | React Developer**
-
-
-
-🐙 **Live link:** https://weather-app-gilt-beta-83.vercel.app/
-
-
 
 ---
 
