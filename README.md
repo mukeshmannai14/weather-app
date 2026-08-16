@@ -222,19 +222,6 @@ Then add your OpenWeather API key as the value and redeploy.
 
 ---
 
-## 🔮 Future Improvements
-
-- 📍 Current location weather
-- 🌤️ 5-day weather forecast
-- 🌙 Dark mode
-- ⭐ Favorite cities
-- 🔍 Search suggestions
-- 🌡️ Celsius / Fahrenheit toggle
-- 🌅 Sunrise and sunset information
-- 📈 Weather charts
-- 🗺️ Weather map integration
-
----
 
 ## 👨‍💻 Author
 
@@ -242,11 +229,11 @@ Then add your OpenWeather API key as the value and redeploy.
 
 **Full Stack Developer | React Developer**
 
-🔗 **LinkedIn:** YOUR_LINKEDIN_LINK
 
-🐙 **GitHub:** YOUR_GITHUB_LINK
 
-📧 **Email:** YOUR_EMAIL
+🐙 **Live link:** https://weather-app-gilt-beta-83.vercel.app/
+
+
 
 ---
 
