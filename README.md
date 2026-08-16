@@ -1,74 +1,261 @@
-<<<<<<< HEAD
-# weather-app
-=======
-# Getting Started with Create React App
+# 🌤️ Weather App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern and responsive **Weather Application** built with **React.js** that provides real-time weather information for any city using the **OpenWeather API**.
 
-## Available Scripts
+Users can search for a city and view temperature, weather conditions, humidity, wind speed, pressure, visibility, and other useful weather information.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 🚀 Live Demo
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+🔗 **Live Website:** YOUR_VERCEL_LINK
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+🔗 **GitHub Repository:** YOUR_GITHUB_REPOSITORY_LINK
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## ✨ Features
 
-### `npm run build`
+- 🌍 Search weather by city name
+- 🌡️ Real-time temperature
+- 🤒 Feels-like temperature
+- 💧 Humidity percentage
+- 💨 Wind speed
+- 🔵 Atmospheric pressure
+- 👁️ Visibility information
+- ☀️ Dynamic weather icons
+- 📅 Live date
+- 🕐 Live current time
+- ⏳ Loading indicator
+- ❌ Error handling
+- 🔐 Environment variable for API key
+- 📱 Responsive design
+- ⚡ Axios API integration
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🛠️ Technologies Used
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **React.js**
+- **JavaScript (ES6+)**
+- **HTML5**
+- **CSS3**
+- **Axios**
+- **OpenWeather API**
+- **Git & GitHub**
+- **Vercel**
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 📂 Project Structure
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```text
+weather-app/
+│
+├── public/
+│
+├── src/
+│   ├── components/
+│   │   ├── Weather.jsx
+│   │   └── Weather.css
+│   │
+│   ├── App.js
+│   ├── App.css
+│   ├── index.js
+│   └── index.css
+│
+├── .env
+├── .gitignore
+├── package.json
+├── package-lock.json
+└── README.md
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## ⚙️ Installation & Setup
 
-## Learn More
+### 1. Clone the Repository
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+git clone YOUR_GITHUB_REPOSITORY_LINK
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### 2. Navigate to the Project
 
-### Code Splitting
+```bash
+cd weather-app
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### 3. Install Dependencies
 
-### Analyzing the Bundle Size
+```bash
+npm install
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### 4. Create Environment File
 
-### Making a Progressive Web App
+Create a `.env` file in the root directory.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+```env
+REACT_APP_WEATHER_API_KEY=YOUR_OPENWEATHER_API_KEY
+```
 
-### Advanced Configuration
+### 5. Start the Application
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+```bash
+npm start
+```
 
-### Deployment
+The application will run at:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+```text
+http://localhost:3000
+```
 
-### `npm run build` fails to minify
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
->>>>>>> fa3f78a (Initialize project using Create React App)
+## 🌦️ How It Works
+
+1. User enters a city name.
+2. React captures the search input.
+3. Axios sends a request to the OpenWeather API.
+4. OpenWeather returns the weather information.
+5. React stores the response using `useState`.
+6. The weather information is displayed dynamically.
+
+---
+
+## 📊 Weather Information
+
+| Information | Description |
+|---|---|
+| 🌡️ Temperature | Current temperature in Celsius |
+| 🤒 Feels Like | Perceived temperature |
+| 💧 Humidity | Current humidity |
+| 💨 Wind Speed | Current wind speed |
+| 🔵 Pressure | Atmospheric pressure |
+| 👁️ Visibility | Visibility distance |
+| 🌡️ Minimum | Minimum temperature |
+| 🔥 Maximum | Maximum temperature |
+| ☁️ Condition | Current weather condition |
+
+---
+
+## 🧠 React Concepts Used
+
+- Functional Components
+- `useState`
+- `useEffect`
+- Event Handling
+- Conditional Rendering
+- API Integration
+- Axios
+- Async/Await
+- Error Handling
+- Environment Variables
+- Component-Based Architecture
+
+---
+
+## 🔐 Environment Variables
+
+The OpenWeather API key is stored using an environment variable.
+
+```env
+REACT_APP_WEATHER_API_KEY=YOUR_API_KEY
+```
+
+Make sure `.env` is included in `.gitignore`.
+
+```gitignore
+.env
+```
+
+**Never upload your API key to GitHub.**
+
+---
+
+## 📱 Responsive Design
+
+The application is responsive and works across:
+
+- 💻 Desktop
+- 💻 Laptop
+- 📱 Mobile
+- 📱 Tablet
+
+---
+
+## 🚨 Error Handling
+
+The application handles:
+
+- Empty city input
+- Invalid city names
+- Invalid API keys
+- Missing API keys
+- API request failures
+- Loading states
+
+---
+
+## 🚀 Deployment
+
+This project is deployed using **Vercel**.
+
+### Build
+
+```bash
+npm run build
+```
+
+### Vercel Environment Variable
+
+Add this environment variable in your Vercel project:
+
+```text
+REACT_APP_WEATHER_API_KEY
+```
+
+Then add your OpenWeather API key as the value and redeploy.
+
+---
+
+## 🔮 Future Improvements
+
+- 📍 Current location weather
+- 🌤️ 5-day weather forecast
+- 🌙 Dark mode
+- ⭐ Favorite cities
+- 🔍 Search suggestions
+- 🌡️ Celsius / Fahrenheit toggle
+- 🌅 Sunrise and sunset information
+- 📈 Weather charts
+- 🗺️ Weather map integration
+
+---
+
+## 👨‍💻 Author
+
+### Mukesh
+
+**Full Stack Developer | React Developer**
+
+🔗 **LinkedIn:** YOUR_LINKEDIN_LINK
+
+🐙 **GitHub:** YOUR_GITHUB_LINK
+
+📧 **Email:** YOUR_EMAIL
+
+---
+
+## ⭐ Support
+
+If you found this project useful, please consider giving the repository a ⭐ on GitHub.
+
+---
+
+## 📄 License
+
+This project was created for learning and portfolio purposes.
